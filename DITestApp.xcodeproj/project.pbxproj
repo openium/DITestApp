@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		BAD98B562AEA35AD0029D583 /* DITestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD98B552AEA35AD0029D583 /* DITestAppTests.swift */; };
 		BAD98B602AEA35AD0029D583 /* DITestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD98B5F2AEA35AD0029D583 /* DITestAppUITests.swift */; };
 		BAD98B622AEA35AD0029D583 /* DITestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD98B612AEA35AD0029D583 /* DITestAppUITestsLaunchTests.swift */; };
+		BAD98B722AEA36CB0029D583 /* DependencyInjection in Frameworks */ = {isa = PBXBuildFile; productRef = BAD98B712AEA36CB0029D583 /* DependencyInjection */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD98B722AEA36CB0029D583 /* DependencyInjection in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = DITestApp;
+			packageProductDependencies = (
+				BAD98B712AEA36CB0029D583 /* DependencyInjection */,
+			);
 			productName = DITestApp;
 			productReference = BAD98B412AEA35AB0029D583 /* DITestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = BAD98B382AEA35AB0029D583;
+			packageReferences = (
+				BAD98B702AEA36CB0029D583 /* XCLocalSwiftPackageReference "DependencyInjection" */,
+			);
 			productRefGroup = BAD98B422AEA35AB0029D583 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -582,6 +590,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		BAD98B702AEA36CB0029D583 /* XCLocalSwiftPackageReference "DependencyInjection" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = DependencyInjection;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BAD98B712AEA36CB0029D583 /* DependencyInjection */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DependencyInjection;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BAD98B392AEA35AB0029D583 /* Project object */;
 }
